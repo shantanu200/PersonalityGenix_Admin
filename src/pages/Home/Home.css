@@ -1,0 +1,52 @@
+.mainBody {
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .login {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .image {
+  width: 50%;
+  text-align: center;
+}
+
+.banner {
+  width: 75%;
+  aspect-ratio: 6/5;
+}
+
+@media only screen and (max-width: 1200px) {
+}
+
+@media only screen and (max-width: 768px) {
+  .container .image {
+    display: none;
+  }
+
+  .container .login {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    margin: 0;
+  }
+  .container .login {
+    width: 90%;
+  }
+}
